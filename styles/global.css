@@ -314,3 +314,13 @@ p{
     width:100%;
     height:auto;
 }
+
+.download{
+    background-color:white;
+    padding: 0 2% 0 2%;
+    margin: 1% 0 1% 0;
+    border-radius: 50px;
+}
+.download a{
+    color:rgb(142, 201, 221);
+}
