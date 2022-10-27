@@ -1,0 +1,43 @@
+
+/* .fig-float-right {
+    margin:0 0 0 2%;
+    width: 30%;
+    float: right;
+    /* border: 1px solid black; */
+/* } */ 
+
+/* .fig-float-right img {
+    width: 100%;
+    height: auto;
+}
+.fig-float-right figcaption {
+    margin: 1% 0;
+    color:rgb(219, 246, 255);
+    text-align: center;
+}
+
+.storyboard-row{
+    display:flex;
+    background-color:white;
+    padding:2%;
+    margin:2% 0 2% 0;
+    justify-content: space-between;
+}
+
+.storyboard-row h2{
+    color: rgb(142, 201, 221);
+    flex: 0 1 30%;
+    text-align: end;
+    margin:10em 0 0 0;
+}
+
+.storyboard-row figcaption{
+    color: rgb(142, 201, 221);
+} */
+
+@media screen and (min-width:768px){
+    #text-wrap{
+        width:10vw;
+        /* nav框的大小往右缩50% */
+    }
+}

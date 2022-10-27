@@ -1,0 +1,10 @@
+.play a{
+    text-decoration:underline;
+    font-size:2.5vw;
+}
+
+.play a:hover{
+    font-size:larger;
+    font-size:3vw;
+}
+

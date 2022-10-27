@@ -1,0 +1,13 @@
+.view a{
+    text-decoration:underline;
+    font-size:2.5vw;
+}
+
+.view a:hover{
+    font-size:larger;
+    font-size:3vw;
+}
+
+.fig-float-right{
+    width:40%;
+}

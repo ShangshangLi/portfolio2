@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap');
+
+@import url("https://use.typekit.net/mne0dwl.css");
+
+html {
+    background: rgb(142, 201, 221) url('../assets/images/index-background.png');
+    background-size: cover;
+    /* background: rgb(142, 201, 221) url('../images/index-background.png');
+    background-size: cover; */
+    /* background-repeat: no-repeat; */
+    /* height:100vh; */
+    color: white;
+    /* font-size:14px; */
+    font-family: 'Futura', sans-serif;
+    /* margin: 2%; */
+}
+
+h1{
+    font-family: 'Nova Flat', cursive;
+    font-size:8vw;
+    margin: 3% 2%;
+    /* border:1px solid black; */
+}
+
+hr{
+    border: 1px solid white;
+}
+
+#index-nav-hr{
+    width: 50%;
+    float: left;
+    margin: 1% 0 0 2%;
+}
+
+#index-navigation {
+    font-family: 'Nova Flat', cursive;
+    font-size:2vw;
+    margin: 6% 2% 0 2%;
+    line-height: 2;
+}
+#index-navigation ul {
+    margin:0;
+    padding: 0;
+    list-style-type: none;
+}
+/* #index-navigation li {
+    
+} */
+#index-navigation a {
+    color: white;
+    text-decoration: none;
+}
+
+#index-navigation a:hover {
+    font-size:larger;
+    /* text-decoration: underline; */
+}
+
+#intro{
+    /* border:1px solid black; */
+    width: 50%;
+    margin:2% 2% 70vh 2%;
+    /* use bottom to control the image size */
+    font-size: 1.5vw;
+    /* text-align:end; */
+    /* float: right; */
+}

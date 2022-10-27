@@ -1,0 +1,14 @@
+.project{
+    flex: 0 1 100%;
+    margin-top:2%;
+
+}
+
+.project img{
+    width:100%;
+    height:auto;
+}
+
+.project h2{
+    margin:1% 0 1% 0;
+}
