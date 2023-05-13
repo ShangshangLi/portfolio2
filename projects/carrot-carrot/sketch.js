@@ -404,7 +404,6 @@ function s1(){
   text(welcomeText,width/7,height-height/5,width-width/5);
   
   if(pressValue==2){
-     // nextScene();
     sceneFlag=1;
   }
 }
@@ -426,7 +425,6 @@ function s2(){
   text(welcomeText,width/7,height-height/5,width-width/5);
   
   if(pressValue==4){
-     // nextScene();
     sceneFlag=1;
   }
 }
@@ -448,16 +446,15 @@ function s3(){
   text(welcomeText,width/7,height-height/5,width-width/4.6);
   
   if(pressValue==6){
-     // nextScene();
     sceneFlag=1;
   }
 }
 
 //walking step count on
 function s4(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  // text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
-  text("flag: "+flag,windowWidth/2,60);
+  // text("flag: "+flag,windowWidth/2,60);
   
   //hiding-3 ,rabbitImg[2];
   rabbitImg[2].hide();
@@ -524,7 +521,7 @@ function s4(){
 }
 
 function s5(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  // text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   
   //showing rabbit-6, rabbitImg[5];
@@ -585,14 +582,11 @@ function s5(){
 //dialogue: getting hoe!
 function s6(){
   textAlign(LEFT);
-  fill(yellow);
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  // fill(yellow);
+  // text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   
   //showing rabbit-8, rabbitImg[7];
-  // rabbitImg[sceneNum].hide();
-  // rabbitImg[sceneNum+1].show();
-  // rabbitImg[sceneNum+1].center();
   rabbitImg[6].hide();
   rabbitImg[7].show();
   rabbitImg[7].center();
@@ -616,7 +610,7 @@ function s6(){
 }
 
 function s7(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  // text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   
   //showing rabbit-9, rabbitImg[8];
@@ -642,7 +636,7 @@ function s7(){
 }
 
 function s8(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  // text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   
   //showing rabbit-10, rabbitImg[9];
@@ -669,9 +663,9 @@ function s8(){
 
 //begin walking step counting again
 function s9(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  // text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
-  text("flag: "+flag,windowWidth/2,60);
+  // text("flag: "+flag,windowWidth/2,60);
   
   //hiding rabbit-10, rabbitImg[9];
   rabbitImg[9].hide();
@@ -722,9 +716,9 @@ function s9(){
 }
 
 function s10(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  // text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
-  text("flag: "+flag,windowWidth/2,60);
+  // text("flag: "+flag,windowWidth/2,60);
   
   //hiding rabbit-12, rabbitImg[11];
   rabbitImg[11].hide();
@@ -775,9 +769,9 @@ function s10(){
 }
 
 function s11(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  // text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
-  text("flag: "+flag,windowWidth/2,60);
+  // text("flag: "+flag,windowWidth/2,60);
   
   //hiding rabbit-14, rabbitImg[13];
   rabbitImg[13].hide();
@@ -828,9 +822,9 @@ function s11(){
 }
 
 function s12(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  // text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
-  text("flag: "+flag,windowWidth/2,60);
+  // text("flag: "+flag,windowWidth/2,60);
   
   //hiding rabbit-16, rabbitImg[15];
   rabbitImg[15].hide();
@@ -881,9 +875,9 @@ function s12(){
 }
 
 function s13(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  // text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
-  text("flag: "+flag,windowWidth/2,60);
+  // text("flag: "+flag,windowWidth/2,60);
   
   //hiding rabbit-18, rabbitImg[17];
   rabbitImg[17].hide();
@@ -934,9 +928,9 @@ function s13(){
 }
 
 function s14(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  // text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
-  text("flag: "+flag,windowWidth/2,60);
+  // text("flag: "+flag,windowWidth/2,60);
   
   //hiding rabbit-20, rabbitImg[19];
   rabbitImg[19].hide();
@@ -987,9 +981,9 @@ function s14(){
 }
 
 function s15(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  // text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
-  text("flag: "+flag,windowWidth/2,60);
+  // text("flag: "+flag,windowWidth/2,60);
   
   //hiding rabbit-22, rabbitImg[21];
   rabbitImg[21].hide();
@@ -1040,9 +1034,9 @@ function s15(){
 }
 
 function s16(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
-  text("flag: "+flag,windowWidth/2,60);
+  //text("flag: "+flag,windowWidth/2,90);
   
   //hiding rabbit-24, rabbitImg[23];
   rabbitImg[23].hide();
@@ -1093,9 +1087,9 @@ function s16(){
 }
 
 function s17(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
-  text("flag: "+flag,windowWidth/2,60);
+  //text("flag: "+flag,windowWidth/2,90);
   
   //hiding rabbit-26, rabbitImg[25];
   rabbitImg[25].hide();
@@ -1146,9 +1140,9 @@ function s17(){
 }
 
 function s18(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
-  text("flag: "+flag,windowWidth/2,60);
+  //text("flag: "+flag,windowWidth/2,90);
   
   //hiding rabbit-26, rabbitImg[25];
   rabbitImg[27].hide();
@@ -1199,9 +1193,9 @@ function s18(){
 }
 
 function s19(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
-  text("flag: "+flag,windowWidth/2,60);
+  //text("flag: "+flag,windowWidth/2,90);
   
   //hiding rabbit-30, rabbitImg[29];
   rabbitImg[29].hide();
@@ -1252,9 +1246,9 @@ function s19(){
 }
 
 function s20(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
-  text("flag: "+flag,windowWidth/2,60);
+  //text("flag: "+flag,windowWidth/2,90);
   
   //hiding rabbit-32, rabbitImg[31];
   rabbitImg[31].hide();
@@ -1305,9 +1299,9 @@ function s20(){
 }
 
 function s21(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+ //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
-  text("flag: "+flag,windowWidth/2,60);
+  //text("flag: "+flag,windowWidth/2,90);
   
   //hiding rabbit-34, rabbitImg[33];
   rabbitImg[33].hide();
@@ -1358,9 +1352,9 @@ function s21(){
 }
 
 function s22(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
-  text("flag: "+flag,windowWidth/2,60);
+  //text("flag: "+flag,windowWidth/2,90);
   
   //hiding rabbit-36, rabbitImg[35];
   rabbitImg[35].hide();
@@ -1411,9 +1405,9 @@ function s22(){
 }
 
 function s23(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
-  text("flag: "+flag,windowWidth/2,60);
+  //text("flag: "+flag,windowWidth/2,90);
   
   //hiding rabbit-38, rabbitImg[37];
   rabbitImg[37].hide();
@@ -1464,9 +1458,9 @@ function s23(){
 }
 
 function s24(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
-  text("flag: "+flag,windowWidth/2,60);
+  //text("flag: "+flag,windowWidth/2,90);
   
   //hiding rabbit-40, rabbitImg[39];
   rabbitImg[39].hide();
@@ -1517,9 +1511,9 @@ function s24(){
 }
 
 function s25(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
-  text("flag: "+flag,windowWidth/2,60);
+  //text("flag: "+flag,windowWidth/2,90);
   
   //hiding rabbit-42, rabbitImg[41];
   rabbitImg[41].hide();
@@ -1570,9 +1564,9 @@ function s25(){
 }
 
 function s26(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
-  text("flag: "+flag,windowWidth/2,60);
+  //text("flag: "+flag,windowWidth/2,90);
   
   //hiding rabbit-44, rabbitImg[43];
   rabbitImg[43].hide();
@@ -1623,9 +1617,9 @@ function s26(){
 }
 
 function s27(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
-  text("flag: "+flag,windowWidth/2,60);
+  //text("flag: "+flag,windowWidth/2,90);
   
   //hiding rabbit-46, rabbitImg[45];
   rabbitImg[45].hide();
@@ -1676,9 +1670,9 @@ function s27(){
 }
 
 function s28(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
-  text("flag: "+flag,windowWidth/2,60);
+  //text("flag: "+flag,windowWidth/2,90);
   
   //hiding rabbit-48, rabbitImg[47];
   rabbitImg[47].hide();
@@ -1729,9 +1723,9 @@ function s28(){
 }
 
 function s29(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
-  text("flag: "+flag,windowWidth/2,60);
+  //text("flag: "+flag,windowWidth/2,90);
   
   //hiding rabbit-50, rabbitImg[49];
   rabbitImg[49].hide();
@@ -1782,9 +1776,9 @@ function s29(){
 }
 
 function s30(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
-  text("flag: "+flag,windowWidth/2,60);
+  //text("flag: "+flag,windowWidth/2,90);
   
   //hiding rabbit-52, rabbitImg[51];
   rabbitImg[51].hide();
@@ -1835,9 +1829,9 @@ function s30(){
 }
 
 function s31(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
-  text("flag: "+flag,windowWidth/2,60);
+  //text("flag: "+flag,windowWidth/2,90);
   
   //hiding rabbit-54, rabbitImg[53];
   rabbitImg[53].hide();
@@ -1888,9 +1882,9 @@ function s31(){
 }
 
 function s32(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
-  text("flag: "+flag,windowWidth/2,60);
+  //text("flag: "+flag,windowWidth/2,90);
   
   //hiding rabbit-56, rabbitImg[55];
   rabbitImg[55].hide();
@@ -1941,9 +1935,9 @@ function s32(){
 }
 
 function s33(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
-  text("flag: "+flag,windowWidth/2,60);
+  //text("flag: "+flag,windowWidth/2,90);
   
   //hiding rabbit-58, rabbitImg[57];
   rabbitImg[57].hide();
@@ -1996,9 +1990,9 @@ function s33(){
 //step count = 27; hoeing finished;
 //extra bonus reminder
 function s34(){
-  textAlign(CENTER);
-  fill(yellow);
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  //textAlign(CENTER);
+  // fill(yellow);
+  // text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   
   //showing rabbit-61, rabbitImg[60];
@@ -2025,9 +2019,9 @@ function s34(){
 }
 
 function s35(){
-  textAlign(CENTER);
-  fill(yellow);
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  //textAlign(CENTER);
+  // fill(yellow);
+  // text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   
   //showing rabbit-62, rabbitImg[61];
@@ -2056,9 +2050,9 @@ function s35(){
 //begin walking step counting again;
 //change reminder to jogging
 function s36(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
-  text("flag: "+flag,windowWidth/2,60);
+  //text("flag: "+flag,windowWidth/2,90);
   
   //hiding rabbit-62, rabbitImg[61];
   rabbitImg[61].hide();
@@ -2109,9 +2103,9 @@ function s36(){
 }
 
 function s37(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
-  text("flag: "+flag,windowWidth/2,60);
+  //text("flag: "+flag,windowWidth/2,90);
   
   //hiding rabbit-64, rabbitImg[63];
   rabbitImg[63].hide();
@@ -2162,9 +2156,9 @@ function s37(){
 }
 
 function s38(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
-  text("flag: "+flag,windowWidth/2,60);
+  //text("flag: "+flag,windowWidth/2,90);
   
   //hiding rabbit-66, rabbitImg[65];
   rabbitImg[65].hide();
@@ -2215,9 +2209,9 @@ function s38(){
 }
 
 function s39(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
-  text("flag: "+flag,windowWidth/2,60);
+  //text("flag: "+flag,windowWidth/2,90);
   
   //hiding rabbit-68, rabbitImg[67];
   rabbitImg[67].hide();
@@ -2268,9 +2262,9 @@ function s39(){
 }
 
 function s40(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
-  text("flag: "+flag,windowWidth/2,60);
+  //text("flag: "+flag,windowWidth/2,90);
   
   //hiding rabbit-70, rabbitImg[69];
   rabbitImg[69].hide();
@@ -2322,9 +2316,9 @@ function s40(){
 
 //remove jogging reminder;
 function s41(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
-  text("flag: "+flag,windowWidth/2,60);
+  //text("flag: "+flag,windowWidth/2,90);
   
   //hiding rabbit-72, rabbitImg[71];
   rabbitImg[71].hide();
@@ -2375,9 +2369,9 @@ function s41(){
 }
 
 function s42(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
-  text("flag: "+flag,windowWidth/2,60);
+  //text("flag: "+flag,windowWidth/2,90);
   
   //hiding rabbit-74, rabbitImg[73];
   rabbitImg[73].hide();
@@ -2428,9 +2422,9 @@ function s42(){
 }
 
 function s43(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
-  text("flag: "+flag,windowWidth/2,60);
+  //text("flag: "+flag,windowWidth/2,90);
   
   //hiding rabbit-76, rabbitImg[75];
   rabbitImg[75].hide();
@@ -2481,9 +2475,9 @@ function s43(){
 }
 
 function s44(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
-  text("flag: "+flag,windowWidth/2,60);
+  //text("flag: "+flag,windowWidth/2,90);
   
   //hiding rabbit-78, rabbitImg[77];
   rabbitImg[77].hide();
@@ -2534,9 +2528,9 @@ function s44(){
 }
 
 function s45(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
-  text("flag: "+flag,windowWidth/2,60);
+  //text("flag: "+flag,windowWidth/2,90);
   
   //hiding rabbit-80, rabbitImg[79];
   rabbitImg[79].hide();
@@ -2587,9 +2581,9 @@ function s45(){
 }
 
 function s46(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
-  text("flag: "+flag,windowWidth/2,60);
+  //text("flag: "+flag,windowWidth/2,90);
   
   //hiding rabbit-82, rabbitImg[81];
   rabbitImg[81].hide();
@@ -2640,9 +2634,9 @@ function s46(){
 }
 
 function s47(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
-  text("flag: "+flag,windowWidth/2,60);
+  //text("flag: "+flag,windowWidth/2,90);
   
   //hiding rabbit-84, rabbitImg[83];
   rabbitImg[83].hide();
@@ -2693,9 +2687,9 @@ function s47(){
 }
 
 function s48(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
-  text("flag: "+flag,windowWidth/2,60);
+  //text("flag: "+flag,windowWidth/2,90);
   
   //hiding rabbit-86, rabbitImg[85];
   rabbitImg[85].hide();
@@ -2746,9 +2740,9 @@ function s48(){
 }
 
 function s49(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
-  text("flag: "+flag,windowWidth/2,60);
+  //text("flag: "+flag,windowWidth/2,90);
   
   //hiding rabbit-88, rabbitImg[87];
   rabbitImg[87].hide();
@@ -2799,9 +2793,9 @@ function s49(){
 }
 
 function s50(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
-  text("flag: "+flag,windowWidth/2,60);
+  //text("flag: "+flag,windowWidth/2,90);
   
   //hiding rabbit-90, rabbitImg[89];
   rabbitImg[89].hide();
@@ -2852,9 +2846,9 @@ function s50(){
 }
 
 function s51(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
-  text("flag: "+flag,windowWidth/2,60);
+  //text("flag: "+flag,windowWidth/2,90);
   
   //hiding rabbit-92, rabbitImg[91];
   rabbitImg[91].hide();
@@ -2905,9 +2899,9 @@ function s51(){
 }
 
 function s52(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
-  text("flag: "+flag,windowWidth/2,60);
+  //text("flag: "+flag,windowWidth/2,90);
   
   //hiding rabbit-94, rabbitImg[93];
   rabbitImg[93].hide();
@@ -2958,9 +2952,9 @@ function s52(){
 }
 
 function s53(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
-  text("flag: "+flag,windowWidth/2,60);
+  //text("flag: "+flag,windowWidth/2,90);
   
   //hiding rabbit-96, rabbitImg[95];
   rabbitImg[95].hide();
@@ -3011,9 +3005,9 @@ function s53(){
 }
 
 function s54(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
-  text("flag: "+flag,windowWidth/2,60);
+  //text("flag: "+flag,windowWidth/2,90);
   
   //showing rabbit-99, rabbitImg[98];
   rabbitImg[97].hide();
@@ -3048,9 +3042,9 @@ function s54(){
 
 
 function s55(){
-  text("scene num: "+sceneNum,windowWidth/2,30);
+  //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
-  text("flag: "+flag,windowWidth/2,60);
+  //text("flag: "+flag,windowWidth/2,90);
   
   //showing rabbit-100,rabbitImg[99];
   rabbitImg[98].hide();
