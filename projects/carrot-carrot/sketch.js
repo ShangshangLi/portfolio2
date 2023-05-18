@@ -15,9 +15,11 @@ let stepCount=0;
 let sceneFlag=0;
 let sceneNum =0;
 let pressValue = 0;
+let instructionFlag =0;
 
-let imgOM,imgBonus, imgUpSign, imgCarrotSign;
-let landingPage, coinPage;
+let imgOM,imgBonus, imgUpSign, imgCarrotSign, imgCorrectSign, imgWrongSign;
+let landingPage, coinPage, continuePage;
+let gifCorrectMove, gifWrongMove;
 
 // let rabbit1;
 let rabbitImg = [];
@@ -31,11 +33,19 @@ function preload(){
   
   landingPage = loadImage('assets/img/carrotCarrotLanding.png');
   coinPage = loadImage('assets/img/pages/coinSettlementPage.png');
+  continuePage = loadImage('assets/img/pages/continuePage.png')
+  
+  gifCorrectMove = createImg("assets/gif/correctMove.gif",'instructionCorrectGif');
+  gifCorrectMove.hide();
+  gifWrongMove = createImg("assets/gif/wrongMove.gif",'instructionWrongGif');
+  gifWrongMove.hide();
   
   imgOM= loadImage('assets/img/signs/oneMoveSign.png');
   imgBonus = loadImage('assets/img/signs/bonusSign.png');
   imgUpSign = loadImage('assets/img/signs/upSign.png');
   imgCarrotSign = loadImage('assets/img/signs/carrotSign.png');
+  imgCorrectSign = loadImage('assets/img/signs/correctSign.png');
+  imgWrongSign = loadImage('assets/img/signs/wrongSign.png');
   
   
   // rabbit1= createImg('assets/rabbit/rabbit-1.png','rabbit static img');
@@ -321,13 +331,13 @@ function draw() {
       s58();
     break;
     
-    case 59:
-      s59();
-    break;
+//     case 59:
+//       s59();
+//     break;
     
-    case 60:
-      s60();
-    break;
+//     case 60:
+//       s60();
+//     break;
   }
 
    // text("scene num: "+sceneNum,windowWidth/2,30);
@@ -346,14 +356,17 @@ function touchStarted() {
   {
     pressValue = pressValue +1;
   }
-  else if((sceneNum>5)&&(sceneNum<9)){
+  else if((sceneNum>6)&&(sceneNum<10)){
     pressValue = pressValue +1;
   }
-  else if((sceneNum>33)&&(sceneNum<36)){
+  else if((sceneNum>34)&&(sceneNum<37)){
     pressValue = pressValue +1;
   }
-  else if((sceneNum>53)&&(sceneNum<57)){
+  else if((sceneNum>54)&&(sceneNum<58)){
     pressValue = pressValue +1;
+  }
+  if(sceneNum==4){
+    instructionFlag = instructionFlag+1;
   }
 }
 
@@ -450,14 +463,43 @@ function s3(){
   }
 }
 
-//walking step count on
 function s4(){
+  //hiding-3 ,rabbitImg[2];
+  rabbitImg[2].hide();
+  
+  background(green);
+  
+  textAlign(CENTER);
+  textSize(windowWidth/18);
+  fill('white');
+  textFont(nunitoBold);
+  text('Please shake your phone',windowWidth/2,height/20);
+  textSize(windowWidth/13);
+  text('VERTICALLY',windowWidth/2,height/10);
+  
+  image(imgCorrectSign,width/10,height/5,width/8,width/8);
+  image(imgWrongSign,width/10,windowHeight/2+windowHeight/9,width/8,width/8);
+  
+  gifCorrectMove.show();
+  gifCorrectMove.position(windowWidth/6,windowHeight/7);
+  gifCorrectMove.size(windowWidth/1.5, AUTO);
+  gifWrongMove.show();
+  gifWrongMove.position(windowWidth/6,windowHeight/2+windowHeight/20);
+  gifWrongMove.size(windowWidth/1.5, AUTO);
+  //to avoid changing pressValue, use instructionFlag at here;
+  if(instructionFlag==2){
+    sceneFlag=1;
+  }
+}
+
+//walking step count on
+function s5(){
   // text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   // text("flag: "+flag,windowWidth/2,60);
   
-  //hiding-3 ,rabbitImg[2];
-  rabbitImg[2].hide();
+  gifCorrectMove.hide();
+  gifWrongMove.hide();
   
   textAlign(CENTER);
   textFont(nunitoBold);
@@ -520,7 +562,7 @@ function s4(){
   }
 }
 
-function s5(){
+function s6(){
   // text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   
@@ -580,7 +622,7 @@ function s5(){
 }
 
 //dialogue: getting hoe!
-function s6(){
+function s7(){
   textAlign(LEFT);
   // fill(yellow);
   // text("scene num: "+sceneNum,windowWidth/2,30);
@@ -609,7 +651,7 @@ function s6(){
   }
 }
 
-function s7(){
+function s8(){
   // text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   
@@ -635,7 +677,7 @@ function s7(){
   }
 }
 
-function s8(){
+function s9(){
   // text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   
@@ -662,7 +704,7 @@ function s8(){
 }
 
 //begin walking step counting again
-function s9(){
+function s10(){
   // text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   // text("flag: "+flag,windowWidth/2,60);
@@ -715,7 +757,7 @@ function s9(){
   }
 }
 
-function s10(){
+function s11(){
   // text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   // text("flag: "+flag,windowWidth/2,60);
@@ -768,7 +810,7 @@ function s10(){
   }
 }
 
-function s11(){
+function s12(){
   // text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   // text("flag: "+flag,windowWidth/2,60);
@@ -821,7 +863,7 @@ function s11(){
   }
 }
 
-function s12(){
+function s13(){
   // text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   // text("flag: "+flag,windowWidth/2,60);
@@ -874,7 +916,7 @@ function s12(){
   }
 }
 
-function s13(){
+function s14(){
   // text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   // text("flag: "+flag,windowWidth/2,60);
@@ -927,7 +969,7 @@ function s13(){
   }
 }
 
-function s14(){
+function s15(){
   // text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   // text("flag: "+flag,windowWidth/2,60);
@@ -980,7 +1022,7 @@ function s14(){
   }
 }
 
-function s15(){
+function s16(){
   // text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   // text("flag: "+flag,windowWidth/2,60);
@@ -1033,7 +1075,7 @@ function s15(){
   }
 }
 
-function s16(){
+function s17(){
   //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   //text("flag: "+flag,windowWidth/2,90);
@@ -1086,7 +1128,7 @@ function s16(){
   }
 }
 
-function s17(){
+function s18(){
   //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   //text("flag: "+flag,windowWidth/2,90);
@@ -1139,7 +1181,7 @@ function s17(){
   }
 }
 
-function s18(){
+function s19(){
   //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   //text("flag: "+flag,windowWidth/2,90);
@@ -1192,7 +1234,7 @@ function s18(){
   }
 }
 
-function s19(){
+function s20(){
   //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   //text("flag: "+flag,windowWidth/2,90);
@@ -1245,7 +1287,7 @@ function s19(){
   }
 }
 
-function s20(){
+function s21(){
   //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   //text("flag: "+flag,windowWidth/2,90);
@@ -1298,7 +1340,7 @@ function s20(){
   }
 }
 
-function s21(){
+function s22(){
  //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   //text("flag: "+flag,windowWidth/2,90);
@@ -1351,7 +1393,7 @@ function s21(){
   }
 }
 
-function s22(){
+function s23(){
   //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   //text("flag: "+flag,windowWidth/2,90);
@@ -1404,7 +1446,7 @@ function s22(){
   }
 }
 
-function s23(){
+function s24(){
   //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   //text("flag: "+flag,windowWidth/2,90);
@@ -1457,7 +1499,7 @@ function s23(){
   }
 }
 
-function s24(){
+function s25(){
   //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   //text("flag: "+flag,windowWidth/2,90);
@@ -1510,7 +1552,7 @@ function s24(){
   }
 }
 
-function s25(){
+function s26(){
   //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   //text("flag: "+flag,windowWidth/2,90);
@@ -1563,7 +1605,7 @@ function s25(){
   }
 }
 
-function s26(){
+function s27(){
   //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   //text("flag: "+flag,windowWidth/2,90);
@@ -1616,7 +1658,7 @@ function s26(){
   }
 }
 
-function s27(){
+function s28(){
   //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   //text("flag: "+flag,windowWidth/2,90);
@@ -1669,7 +1711,7 @@ function s27(){
   }
 }
 
-function s28(){
+function s29(){
   //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   //text("flag: "+flag,windowWidth/2,90);
@@ -1722,7 +1764,7 @@ function s28(){
   }
 }
 
-function s29(){
+function s30(){
   //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   //text("flag: "+flag,windowWidth/2,90);
@@ -1775,7 +1817,7 @@ function s29(){
   }
 }
 
-function s30(){
+function s31(){
   //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   //text("flag: "+flag,windowWidth/2,90);
@@ -1828,7 +1870,7 @@ function s30(){
   }
 }
 
-function s31(){
+function s32(){
   //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   //text("flag: "+flag,windowWidth/2,90);
@@ -1881,7 +1923,7 @@ function s31(){
   }
 }
 
-function s32(){
+function s33(){
   //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   //text("flag: "+flag,windowWidth/2,90);
@@ -1934,7 +1976,7 @@ function s32(){
   }
 }
 
-function s33(){
+function s34(){
   //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   //text("flag: "+flag,windowWidth/2,90);
@@ -1989,7 +2031,7 @@ function s33(){
 
 //step count = 27; hoeing finished;
 //extra bonus reminder
-function s34(){
+function s35(){
   //textAlign(CENTER);
   // fill(yellow);
   // text("scene num: "+sceneNum,windowWidth/2,30);
@@ -2018,7 +2060,7 @@ function s34(){
   }
 }
 
-function s35(){
+function s36(){
   //textAlign(CENTER);
   // fill(yellow);
   // text("scene num: "+sceneNum,windowWidth/2,30);
@@ -2049,7 +2091,7 @@ function s35(){
 
 //begin walking step counting again;
 //change reminder to jogging
-function s36(){
+function s37(){
   //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   //text("flag: "+flag,windowWidth/2,90);
@@ -2102,7 +2144,7 @@ function s36(){
   }
 }
 
-function s37(){
+function s38(){
   //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   //text("flag: "+flag,windowWidth/2,90);
@@ -2155,7 +2197,7 @@ function s37(){
   }
 }
 
-function s38(){
+function s39(){
   //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   //text("flag: "+flag,windowWidth/2,90);
@@ -2208,7 +2250,7 @@ function s38(){
   }
 }
 
-function s39(){
+function s40(){
   //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   //text("flag: "+flag,windowWidth/2,90);
@@ -2261,7 +2303,7 @@ function s39(){
   }
 }
 
-function s40(){
+function s41(){
   //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   //text("flag: "+flag,windowWidth/2,90);
@@ -2315,7 +2357,7 @@ function s40(){
 }
 
 //remove jogging reminder;
-function s41(){
+function s42(){
   //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   //text("flag: "+flag,windowWidth/2,90);
@@ -2368,7 +2410,7 @@ function s41(){
   }
 }
 
-function s42(){
+function s43(){
   //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   //text("flag: "+flag,windowWidth/2,90);
@@ -2421,7 +2463,7 @@ function s42(){
   }
 }
 
-function s43(){
+function s44(){
   //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   //text("flag: "+flag,windowWidth/2,90);
@@ -2474,7 +2516,7 @@ function s43(){
   }
 }
 
-function s44(){
+function s45(){
   //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   //text("flag: "+flag,windowWidth/2,90);
@@ -2527,7 +2569,7 @@ function s44(){
   }
 }
 
-function s45(){
+function s46(){
   //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   //text("flag: "+flag,windowWidth/2,90);
@@ -2580,7 +2622,7 @@ function s45(){
   }
 }
 
-function s46(){
+function s47(){
   //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   //text("flag: "+flag,windowWidth/2,90);
@@ -2633,7 +2675,7 @@ function s46(){
   }
 }
 
-function s47(){
+function s48(){
   //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   //text("flag: "+flag,windowWidth/2,90);
@@ -2686,7 +2728,7 @@ function s47(){
   }
 }
 
-function s48(){
+function s49(){
   //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   //text("flag: "+flag,windowWidth/2,90);
@@ -2739,7 +2781,7 @@ function s48(){
   }
 }
 
-function s49(){
+function s50(){
   //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   //text("flag: "+flag,windowWidth/2,90);
@@ -2792,7 +2834,7 @@ function s49(){
   }
 }
 
-function s50(){
+function s51(){
   //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   //text("flag: "+flag,windowWidth/2,90);
@@ -2845,7 +2887,7 @@ function s50(){
   }
 }
 
-function s51(){
+function s52(){
   //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   //text("flag: "+flag,windowWidth/2,90);
@@ -2898,7 +2940,7 @@ function s51(){
   }
 }
 
-function s52(){
+function s53(){
   //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   //text("flag: "+flag,windowWidth/2,90);
@@ -2951,7 +2993,7 @@ function s52(){
   }
 }
 
-function s53(){
+function s54(){
   //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   //text("flag: "+flag,windowWidth/2,90);
@@ -3004,7 +3046,7 @@ function s53(){
   }
 }
 
-function s54(){
+function s55(){
   //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   //text("flag: "+flag,windowWidth/2,90);
@@ -3041,7 +3083,7 @@ function s54(){
 }
 
 
-function s55(){
+function s56(){
   //text("scene num: "+sceneNum,windowWidth/2,30);
   // text("Img Index: "+imgIndex,windowWidth/2,60);
   //text("flag: "+flag,windowWidth/2,90);
@@ -3076,7 +3118,7 @@ function s55(){
   
 }
 
-function s56(){
+function s57(){
   rabbitImg[99].hide();
   
   image(coinPage,0, 0,width,landingPage.height*width/landingPage.width);//to fit width;
@@ -3084,13 +3126,13 @@ function s56(){
   push();
   translate(windowWidth/1.8,windowHeight-windowHeight/3.25);
   angleMode(DEGREES);
-  rotate(15);
+  rotate(25);
   
   textAlign(LEFT);
   textFont(nunitoExtraBold);
   textSize(windowWidth/6);
   fill(lightYellow);
-  text('X' + int(stepCount),0,0);
+  text('X' + int(stepCount),width/5.5,height/45);
   pop();
   
   if(pressValue==22){
@@ -3098,6 +3140,10 @@ function s56(){
     sceneFlag=1;
   }
   
+}
+
+function s58(){
+  image(continuePage,0, 0,width,landingPage.height*width/landingPage.width);//to fit width;
 }
 
 
