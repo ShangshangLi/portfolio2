@@ -112,6 +112,12 @@ p{
     margin:0 0 2% 0;
 }
 
+.center {
+    display: block;
+    margin: 1% auto 2% auto;
+    width: 50%;
+  }
+
 .fig-float-right {
     margin:0 0 0 2%;
     width: 30%;
@@ -128,11 +134,48 @@ p{
     text-align: center;
 }
 
+.fig-center {
+    margin:0;
+    width: 100%;
+    /* float: right; */
+    /* border: 1px solid black; */
+}
+
+.fig-half {
+    margin:0;
+    width: 50%;
+    /* float: right; */
+    /* border: 1px solid black; */
+}
+
+.three-img-row{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 3% 2.5% 3% 2.5%;
+}
+
+.carrotcarrot-video {
+    width:100%;
+    margin:3vw 2.5%;
+}
+
+#carrotcarrot-userScenario{
+    width: 72%;
+    height: auto;
+    margin-right: 2%;
+}
+
+#carrotcarrot-gameMechanics{
+    width: 20%;
+    height: auto;
+}
+
 .conceptual-video{
     width:100%;
     text-align: center;
     text-decoration:underline;
-  }
+}
   
 .cradle-video {
     width:70%;
@@ -166,7 +209,7 @@ p{
     flex-flow: row wrap;
     justify-content: space-between;
     margin: 3% 2.5% 0 2.5%;
-  }
+}
 .video-process-row p{
     color:white;
 }
