@@ -1,11 +1,11 @@
-if (screen.width >= 500) {
-  var img = document.createElement("img");
-  img.setAttribute('src', '../../assets/images/carrotcarrot-img/userGuide1.0-02.png');
-  img.setAttribute('alt', 'na');
-  img.style.width = '100%';
-  document.body.appendChild(img);
-}
-else{
+// if (screen.width >= 500) {
+//   var img = document.createElement("img");
+//   img.setAttribute('src', '../../assets/images/carrotcarrot-img/userGuide1.0-02.png');
+//   img.setAttribute('alt', 'na');
+//   img.style.width = '100%';
+//   document.body.appendChild(img);
+// }
+// else{
 //fonts;
 let nunitoRegular,nunitoBold,nunitoExtraBold;
 
@@ -3209,4 +3209,4 @@ function requestAccess() {
     .catch(console.error);
   this.remove(); // kills button after user interaction
 }
-}
+// }
