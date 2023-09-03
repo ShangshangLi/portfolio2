@@ -6,6 +6,7 @@
 //   document.body.appendChild(img);
 // }
 // else{
+  
 //fonts;
 let nunitoRegular,nunitoBold,nunitoExtraBold;
 

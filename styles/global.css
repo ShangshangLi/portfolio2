@@ -155,6 +155,27 @@ p{
     margin: 3% 2.5% 3% 2.5%;
 }
 
+.fig-two-row {
+    margin:0 1 0 1%;
+    width: 45%;
+    float: right;
+    /* border: 1px solid black; */
+}
+.fig-two-row img {
+    width: 100%;
+    height: auto;
+}
+.fig-two-row figcaption {
+    margin: 2% 0;
+    text-align: center;
+}
+
+.two-img-row{
+    display:flex;
+    margin:0 0 2% 0;
+    justify-content: space-between;
+}
+
 .carrotcarrot-video {
     width:100%;
     margin:3vw 2.5%;
