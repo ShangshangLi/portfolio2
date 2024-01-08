@@ -1,3 +1,9 @@
+html {
+    background: rgb(119, 154, 128);
+    background-size: cover;
+
+}
+
 h2 {
     margin: 0 0 1% .5vw;
 }
