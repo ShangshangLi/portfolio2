@@ -6,4 +6,25 @@ html {
 
 h2 {
     margin: 0 0 1% .5vw;
+    font-size: 2vw;
+}
+h3 {
+    font-size: 1.6vw;
+}
+
+p{
+    font-size:1.2vw;
+}
+
+.carrot-section img{
+    height:44vw;
+}
+
+.text-wrap li{
+    font-size: 1.2vw;
+}
+
+.carrot-info-p {
+    font-size: 1.5vw;
+    margin: 1% 0 1% 0;
 }
