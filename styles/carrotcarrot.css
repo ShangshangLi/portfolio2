@@ -1,7 +1,7 @@
 html {
     background: rgb(119, 154, 128);
     background-size: cover;
-
+    color:white;
 }
 
 h2 {
@@ -16,6 +16,10 @@ p{
     font-size:1.2vw;
 }
 
+a{
+    color:white;
+}
+
 .carrot-section img{
     height:44vw;
 }
@@ -27,4 +31,14 @@ p{
 .carrot-info-p {
     font-size: 1.5vw;
     margin: 1% 0 1% 0;
+}
+
+.selected {
+    background-color:black;
+    color:white;
+}
+
+footer{
+    background-color:white;
+    color:rgb(119, 154, 128);
 }

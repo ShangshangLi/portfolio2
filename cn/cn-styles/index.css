@@ -1,0 +1,25 @@
+body, html {
+    margin: 0;
+   padding:0;
+}
+header{
+    padding:0 0;
+}
+h1{
+    color:white;
+    margin:0;
+}
+.full{
+    color:black;
+    height:auto;
+    width: auto;
+    margin:0 12%;
+    font-size: 25vw;
+}
+/* Mobile Adjustments */
+@media (max-width: 600px) {
+    .full{
+        margin:0 24%;
+        font-size: 50vw;
+    }
+}

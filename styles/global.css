@@ -3,9 +3,7 @@
 @import url("https://use.typekit.net/mne0dwl.css");
 
 html {
-    background: rgb(142, 201, 221) url('../assets/images/index-background.png');
-    background-size: cover;
-    color: white;
+    background-color: white;
     /* font-size:14px; */
     font-family: 'Futura', sans-serif;
     /* margin: 2%; */
@@ -19,23 +17,27 @@ body {
 }
 
 header {
-    text-align: center;
+    /* text-align: center; */
+    display: flex;
+    /* justify-content: space-between;
+    align-items: center; */
 }
 
 header h1{
+    margin:0 0 0 38.5%;
     font-size:3vw;
+    width:55%;  
 }
 
-header h1 a {
-    color: white;
-    text-decoration: none;
+header h1 a:hover {
+    text-decoration:underline;
+    font-size:3vw;
 }
 
 h1{
     font-family: 'Nova Flat', cursive;
     font-size:8vw;
     margin: 0;
-    /* border:1px solid black; */
 }
 
 h2{
@@ -49,17 +51,29 @@ h3{
 }
 
 hr{
-    border: 1px solid white;
+    border: 1px solid black;
+}
+
+.subpage-title{
+    border: 1vw solid black;
 }
 
 a {
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
 a:hover {
     font-size:larger;
     /* text-decoration: underline; */
+}
+
+.language-navigation{
+    line-height: 3;
+}
+.selected{
+    background-color: blue;
+    color:white;
 }
 
 #main-navigation {
@@ -98,6 +112,10 @@ p{
     font-size:1.5vw;
 }
 
+figcaption{
+    color:rgba(0, 0, 255, 0.401);
+}
+
 .project{
     flex: 0 1 30%;
     margin-top:2%;
@@ -130,7 +148,6 @@ p{
 }
 .fig-float-right figcaption {
     margin: 1% 0;
-    color:rgb(219, 246, 255);
     text-align: center;
 }
 
@@ -194,8 +211,8 @@ p{
 
 .conceptual-video{
     width:100%;
-    text-align: center;
-    text-decoration:underline;
+    /* text-align: center; */
+    /* text-decoration:underline; */
 }
   
 .cradle-video {
@@ -388,4 +405,11 @@ p{
 }
 .download a{
     color:rgb(142, 201, 221);
+}
+
+footer{
+    background-color: black;
+    color:white;
+    width:auto;
+    text-align: center;
 }

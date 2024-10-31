@@ -3,65 +3,83 @@
 @import url("https://use.typekit.net/mne0dwl.css");
 
 html {
-    background: rgb(142, 201, 221) url('../assets/images/index-background.png');
-    background-size: cover;
-    /* background: rgb(142, 201, 221) url('../images/index-background.png');
-    background-size: cover; */
-    /* background-repeat: no-repeat; */
-    /* height:100vh; */
-    color: white;
+    background-color: white;
     /* font-size:14px; */
     font-family: 'Futura', sans-serif;
     /* margin: 2%; */
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 0;
+    height: 10vw;
+}
+
 h1{
     font-family: 'Nova Flat', cursive;
     font-size:8vw;
-    margin: 3% 2%;
-    /* border:1px solid black; */
+    margin: 0% 2%;
+    width: 70%;
 }
 
-hr{
-    border: 1px solid white;
+a {
+    color: black;
+    text-decoration: none;
 }
 
-#index-nav-hr{
-    width: 50%;
-    float: left;
-    margin: 1% 0 0 2%;
+a:hover {
+    text-decoration: underline;
 }
 
 #index-navigation {
     font-family: 'Nova Flat', cursive;
     font-size:2vw;
-    margin: 6% 2% 0 2%;
+    margin: 0% 2% 0 2%;
     line-height: 2;
-}
-#index-navigation ul {
-    margin:0;
-    padding: 0;
-    list-style-type: none;
-}
-/* #index-navigation li {
-    
-} */
-#index-navigation a {
-    color: white;
-    text-decoration: none;
+    text-align: end;
 }
 
-#index-navigation a:hover {
-    font-size:larger;
-    /* text-decoration: underline; */
+#index-navigation a:hover{
+    font-size:2.1vw;
+}
+
+.selected{
+    background-color: blue;
+    color:white;
 }
 
 #intro{
-    /* border:1px solid black; */
-    width: 50%;
-    margin:2% 2% 70vh 2%;
-    /* use bottom to control the image size */
+    
+    /* margin:2% 2% 2% 2%;
+    font-size: 1.5vw; */
+    position: fixed; /* Fixes it to the viewport */
+    bottom: 1em;     /* Positions it 1em from the bottom */
+    left: 1em;       /* Positions it 1em from the left */
+    max-width: 70vw; /* Limit width to keep it compact */
+    
+    padding: 1%;
+    
     font-size: 1.5vw;
-    /* text-align:end; */
-    /* float: right; */
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 600px) {
+    header{
+        display:block;
+    }
+    nav{
+        padding:2% 0;
+    }
+    #index-navigation {
+        text-align:left;
+    }
+    #intro {
+        font-size: 2.5vw; /* Adjust font size for mobile */
+        bottom: 12em;
+        left: 1em;
+    }
 }

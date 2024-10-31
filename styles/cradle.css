@@ -1,4 +1,13 @@
 
+h2{
+    text-decoration: underline;
+}
+
+.interactive-website-reminder {
+
+    color:rgba(0, 0, 255, 0.401);
+
+}
 /* .fig-float-right {
     margin:0 0 0 2%;
     width: 30%;
